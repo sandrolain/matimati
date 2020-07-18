@@ -12,7 +12,7 @@ export default [
       {
         dir: "./docs",
         format: "esm",
-        sourcemap: false
+        sourcemap: true
       }
     ],
     plugins: [
