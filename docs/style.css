@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 html, body {
   margin: 0;
@@ -13,38 +8,41 @@ html, body {
 }
 
 body {
-  background: #000;
+  background: #000000 url("./images/bg.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  font-family: 'Itim', cursive;
 }
 
 #app {
   max-width: 1024px;
   max-height: 768px;
   height: 100%;
-  background: url("./images/bg.jpg") no-repeat 50% 50%;
-  background-size: cover;
   margin: 0 auto;
   display: flex;
+  flex-direction:  column;
   justify-content: center;
-  align-items: center;
-  padding: 80px;
+  align-items: flex-start;
+  padding: 40px;
   box-sizing: border-box;
 }
 
 #letters,
-#numbers {
+#numbers,
+#words {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  box-sizing: border-box;
 }
 
 #letters {
-  padding-right: 20px;
+  padding-bottom: 40px;
 }
 
 #numbers {
-  flex: 1 0 33%;
+  padding-bottom: 40px;
 }
 
 htna-mati-button {
@@ -53,10 +51,3 @@ htna-mati-button {
 htna-mati-button::part(button) {
   min-width: 1.8em;
 }
-
-    </style>
-  </head>
-  <body>
-    <script type="module" src="../dist/index.js"></script>
-  </body>
-</html>

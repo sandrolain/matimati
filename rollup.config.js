@@ -10,15 +10,12 @@ export default [
     },
     output: [
       {
-        dir: "./dist",
+        dir: "./docs",
         format: "esm",
-        sourcemap: true
+        sourcemap: false
       }
     ],
     plugins: [
-      del({
-        targets: ["./dist/*"]
-      }),
       typescript({
         typescript: require("typescript")
       }),
